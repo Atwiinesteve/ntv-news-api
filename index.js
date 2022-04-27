@@ -2,11 +2,13 @@
 const express = require('express');
 const cheerio = require('cheerio');
 const axios = require('axios');
+const cors = require('cors');
 
 
 // Application Setup.
 const app = express();
 const PORT = process.env.PORT || 5000;
+app.use(cors());
 
 // Getting News.
 
@@ -35,7 +37,7 @@ app.get('/news', (req, res) => {
 
 
 // Test Route.
-app.get('/', (req, res) => { res.send('Welcome to the National News API. Get Latest News on what is happening around Uganda via trusted news platforms in the country. Just type: \'\\news\' at the end of the URL and press Enter button to get the latest news.') })
+app.get('/', (req, res) => { res.send('Welcome to the National News API. Get Latest News on what is happening around Uganda via trusted news platforms in the country. ') })
 
 // Server Initialization.
 app.listen(PORT, () => { console.log(`Server Application Running at http://localhost:${PORT}`); });
