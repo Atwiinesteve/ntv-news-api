@@ -1,0 +1,22 @@
+{
+  "name": "ntv-news-api",
+  "version": "1.0.0",
+  "description": "news ntv uganda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "news",
+    "ntv",
+    "uganda"
+  ],
+  "author": "Steve Atwiine Kiiza",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.18.0",
+    "nodemon": "^2.0.15"
+  }
+}
